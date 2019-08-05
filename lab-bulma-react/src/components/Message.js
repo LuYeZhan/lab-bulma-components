@@ -1,16 +1,19 @@
 import React from "react";
+import Container from './Container';
 
 const Message = () => {
   return (
-<article class="message is-info">
-  <div class="message-header">
-    <p>Hello World</p>
-    <button class="delete" aria-label="delete"></button>
-  </div>
-  <div class="message-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
-  </div>
-</article>
+    <Container>
+      <article className="message is-info">
+        <div className="message-header">
+          <p>Hello World</p>
+          <button className="delete" aria-label="delete"></button>
+        </div>
+        <div className="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+        </div>
+      </article>
+  </Container>
   );
 }
 export default Message;

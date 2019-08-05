@@ -1,21 +1,17 @@
 import React from "react";
 
-const Formfield = () => {
+const Formfield = (props) => {
   return (
-    <div>
-    <div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input class="input" type="text" placeholder="e.g Alex Smith" />
-  </div>
-</div>
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control">
-    <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" />
-  </div>
-</div>
-</div>
+    <div className="field">
+      <label className="label has-text-left">{props.label}</label>
+      <div className="control">
+        <input
+          className="input"
+          type={props.type}
+          placeholder={props.placeholder}
+        />
+      </div>
+    </div>
   );
 }
 export default Formfield;

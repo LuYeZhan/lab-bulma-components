@@ -1,9 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const Container = () => {
-  return (
-  <div class="container is-fluid">
-  </div>
-  );
-}
+const Container = (props) => <div className="container">{props.children}</div>;
+
 export default Container;
