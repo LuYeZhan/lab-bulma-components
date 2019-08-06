@@ -5,12 +5,14 @@ import React from 'react';
 // import CoolButton from './components/CoolButton';
 import Signup from './components/Signup';
 import Message from './components/Message';
+import Navbar from './components/Navbar';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Signup/>
       <Message/>
     </div>

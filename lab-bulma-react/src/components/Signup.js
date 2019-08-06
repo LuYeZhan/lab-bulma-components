@@ -1,14 +1,10 @@
 import React from "react";
 import CoolButton from './CoolButton'
-
 import Container from './Container';
-import Navbar from './Navbar';
 import Formfield from './Formfield';
 
 const Signup = () => {
   return (
-    <>
-    <Navbar/>
       <Container>
         <form>
           <Formfield label="Name" type="text" placeholder="e.g Alex Smith" />
@@ -17,7 +13,6 @@ const Signup = () => {
           <CoolButton className= "is-success"> Submit </CoolButton>
         </form>
     </Container>
-  </>
   );
 }
 export default Signup;
